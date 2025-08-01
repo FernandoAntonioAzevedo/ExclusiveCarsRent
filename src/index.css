@@ -9,8 +9,8 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
-
+    text-decoration: none;    
+    font-family: var(--Roboto-font);
 }
 
 
@@ -24,4 +24,79 @@
     
     --Bricolage-font: "Bricolage Grotesque", sans-serif;
     --jost-font: "Jost", sans-serif;
+    --Roboto-font: "Roboto", sans-serif;
+
+    --transition-regular: .3s;
+    --transition-slow: .6s;
+}
+
+html,
+body {
+    background-color: var(--section-dark-bg);
+}
+
+.logo {
+    @apply font-bricolage;
+}
+
+.logo span {
+    @apply font-bricolage;
+}
+
+.menu {
+    transition: var(--transition-regular);
+}
+
+.menu li a {
+    position: relative;
+    padding: 0px 10px;
+    z-index: 1;
+    display: inline-block;
+}
+
+.menu li a::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 50px;
+    background-color: var(--prima-color);
+    transition: width .3s ease-in-out;
+    transition-delay: .2s;
+}
+
+.menu li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--prima-color);
+    transition: height .3s ease-in-out;
+    z-index: -1;
+}
+
+.menu li:hover a::after {
+    width: 100%;
+    transition-delay: 0s;
+}
+
+.menu li:hover a::before {
+    height: 100%;
+    transition-delay: .3s;
+}
+
+.menu li a::after {
+    transition-delay: 0.3s;
+}
+
+.menu li a::before {
+    transition-delay: 0s;
+}
+
+.menu li a.active::after {
+    width: 100%;
 }
