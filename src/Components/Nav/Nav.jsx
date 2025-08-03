@@ -15,7 +15,7 @@ const Nav = () => {
 
   return (
     <>
-       <nav className={`px-[12%] text-white fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ${ isScrolled ? 'bg-[#111111] shadow-md' : 'bg-transparent'}`}>
+       <nav className={`px-[12%] bg-red-500 text-white fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ${ isScrolled ? 'bg-[#111111] shadow-md' : 'bg-transparent'}`}>
             <div className='navbar max-w-7xl py-4 flex items-center justify-between relative'>
               <Link to='/' className='text-4xl font-bold logo font-bricolage'>
                 Exclusive <span>Cars</span>
@@ -41,7 +41,7 @@ const Nav = () => {
               </ul>
 
               <div className='hidden lg:flex items-center gap-4'>
-                  <i className="bi bi telephone flex items-center justify-center border border-yellow-500 rounded-full text-2xl w-[45px] h-[45px]"></i>
+                  <i className="bi bi-telephone flex items-center justify-center border border-yellow-500 rounded-full text-2xl w-[45px] h-[45px]"></i>
                   <div>
                     <p className='text-xs text-white opacity-70'>Precisa de ajuda?</p>
                     <p className='font-semibold'>546 653 4322</p>

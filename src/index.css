@@ -15,12 +15,12 @@
 
 
 :root {
-    --prima-color: "#1b1b1b";
-    --section-dark-bg: "#222222";
-    --section-light-bg: "#222222";
-    --text-light: "#999";
-    --white-color: "#fff";
-    --black-color: "#000";
+    --prim-color: #f5b754;
+    --section-dark-bg: #1b1b1b;
+    --section-light-bg: #222222;
+    --text-light: #999;
+    --white-color: #fff;
+    --black-color: #000;
     
     --Bricolage-font: "Bricolage Grotesque", sans-serif;
     --jost-font: "Jost", sans-serif;
@@ -44,7 +44,7 @@ body {
 }
 
 .menu {
-    transition: var(--transition-regular);
+    transition: var(--transition-regular) !important;
 }
 
 .menu li a {
@@ -62,9 +62,10 @@ body {
     width: 0;
     height: 3px;
     border-radius: 50px;
-    background-color: var(--prima-color);
+    background-color: var(--prim-color);
     transition: width .3s ease-in-out;
     transition-delay: .2s;
+    z-index: -1;
 }
 
 .menu li a::before {
@@ -74,7 +75,7 @@ body {
     left: 0;
     width: 100%;
     height: 0;
-    background-color: var(--prima-color);
+    background-color: var(--prim-color);
     transition: height .3s ease-in-out;
     z-index: -1;
 }
@@ -99,4 +100,10 @@ body {
 
 .menu li a.active::after {
     width: 100%;
+    transition-delay: 0s;
+}
+
+.menu li a.active::before {
+    height: 100%;
+    transition-delay: 0.3s;
 }
