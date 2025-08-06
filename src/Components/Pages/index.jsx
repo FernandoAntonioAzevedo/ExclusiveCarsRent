@@ -65,21 +65,21 @@ function index() {
               className='hero-swiper w-full h-full'>
               {/* slide 1 */}
               <SwiperSlide>
-                  <div className="hero-slide hero-slide1 w-full flex items-center px-[12%]">
+                  <div className="hero-slide hero-slide1 w-full h-full flex items-center px-[12%]">
                       <div className="hero-content text-white">
                         <span className='font-bricolage text-1xl uppercase tracking-widest'>Premium</span>
                         <h1 className='font-bricolage text-9xl hero-title my-3'>Locação de carro</h1>
-                        <p className='my-2 text-2xl font-bricolage hero-subtitle text-gray-300'>You can rent any of ours luxurious Cars.</p>
-                        <p className='my-7 w-[60%] hero-pere text-gray-300'>Experience premium car rentals with comfort, style, and affordability-perfect for 
-                          road trips, business travel, or luxury weekend getaways.
+                        <p className='my-2 text-2xl font-bricolage hero-subtitle text-gray-300'>Você pode alugar qualquer um de nossos carros luxuosos.</p>
+                        <p className='my-7 w-[60%] hero-pere text-gray-300'>Experimente o aluguel de carros premium com conforto, estilo e acessibilidade - 
+                          perfeito para viagens de carro, viagens de negócios ou escapadas de luxo nos finais de semana.
                         </p>
                         <div className='hero-btns flex-gap-4 mt-8'>
                           <button className='default-btn bg-[#f5b754] transition-all hover:bg-white hover:text-black px-7 py-5 font-bricolage rounded-full transform hover:-translate-y-1'>
-                              View More &nbsp;
+                              Ver mais &nbsp;
                               <i className="bi bi-arrow-up-right"></i> 
                           </button>
                           <button className='default-btn border px-7 py-5 font-bricolage rounded-full transition-all hover:bg-[#f5b754] hover:border-transparent hover:-translate-y-1'>
-                            Rent Now
+                            Locar agora
                             <i className="bi bi-arrow-up-right"></i> 
                           </button>
                         </div>
@@ -89,28 +89,96 @@ function index() {
 
               {/* slide 2 */}
               <SwiperSlide>
-                  <div className="hero-slide hero-slide2 w-full flex items-center px-[12%]">
+                  <div className="hero-slide hero-slide2 w-full h-full flex items-center px-[12%]">
                       <div className="hero-content text-white">
                         <span className='font-bricolage text-1xl uppercase tracking-widest'>Premium</span>
                         <h1 className='font-bricolage text-9xl hero-title my-3'>Locação de carro</h1>
-                        <p className='my-2 text-2xl font-bricolage hero-subtitle text-gray-300'>You can rent any of ours luxurious Cars.</p>
-                        <p className='my-7 w-[60%] hero-pere text-gray-300'>Experience premium car rentals with comfort, style, and affordability-perfect for 
+                        <p className='my-2 text-2xl font-bricolage hero-subtitle text-gray-300'>Você pode alugar qualquer um de nossos carros luxuosos.</p>
+                        <p className='my-7 w-[60%] hero-pere text-gray-300'>Experimente o aluguel de carros premium com conforto, estilo e acessibilidade - 
+                          perfeito para viagens de carro, viagens de negócios ou escapadas de luxo nos finais de semana.Experience premium car rentals with comfort, style, and affordability-perfect for 
                           road trips, business travel, or luxury weekend getaways.
                         </p>
                         <div className='hero-btns flex-gap-4 mt-8'>
                           <button className='default-btn bg-[#f5b754] transition-all hover:bg-white hover:text-black px-7 py-5 font-bricolage rounded-full transform hover:-translate-y-1'>
-                              View More &nbsp;
+                              Ver mais &nbsp;
                               <i className="bi bi-arrow-up-right"></i> 
                           </button>
                           <button className='default-btn border px-7 py-5 font-bricolage rounded-full transition-all hover:bg-[#f5b754] hover:border-transparent hover:-translate-y-1'>
-                            Rent Now
+                            Locar agora
                             <i className="bi bi-arrow-up-right"></i> 
                           </button>
                         </div>
                       </div>
                   </div>
               </SwiperSlide>
-          </Swiper>  
+
+              {/* slide 3 */}
+              <SwiperSlide>
+                  <div className="hero-slide hero-slide3 w-full h-full flex items-center px-[12%]">
+                      <div className="hero-content text-white">
+                        <span className='font-bricolage text-1xl uppercase tracking-widest'>Premium</span>
+                        <h1 className='font-bricolage text-9xl hero-title my-3'>Locação de carro</h1>
+                        <p className='my-2 text-2xl font-bricolage hero-subtitle text-gray-300'>Você pode alugar qualquer um de nossos carros luxuosos.</p>
+                        <p className='my-7 w-[60%] hero-pere text-gray-300'>Experimente o aluguel de carros premium com conforto, estilo e acessibilidade - 
+                          perfeito para viagens de carro, viagens de negócios ou escapadas de luxo nos finais de semana.Experience premium car rentals with comfort, style, and affordability-perfect for 
+                          road trips, business travel, or luxury weekend getaways.
+                        </p>
+                        <div className='hero-btns flex-gap-4 mt-8'>
+                          <button className='default-btn bg-[#f5b754] transition-all hover:bg-white hover:text-black px-7 py-5 font-bricolage rounded-full transform hover:-translate-y-1'>
+                              Ver mais &nbsp;
+                              <i className="bi bi-arrow-up-right"></i> 
+                          </button>
+                          <button className='default-btn border px-7 py-5 font-bricolage rounded-full transition-all hover:bg-[#f5b754] hover:border-transparent hover:-translate-y-1'>
+                            Locar agora
+                            <i className="bi bi-arrow-up-right"></i> 
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+              </SwiperSlide>
+          </Swiper>
+
+          {/* Book option */}
+          <div className='book-option bg-[#1f1f1f] text-white w-[90%] max-w-[1200px]
+            mx-auto mt-[-50px] rounded-3xl px-6 py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 shadow-lg 
+            z-50 absolute bottom-[0%] left-[50%] transform -translate-x-1/2 -translate-y-1/2'>
+            {/* Cars type */}
+            <div className='relative  w-full lg:w-auto px-4 py-3 group border-r border-gray-600'>
+              <button className='flex items-center gap-2 w-full justify-between text-gray-400'>
+                Escolha o tipo de carro 
+                <i className="ri-arrow-down-s-line text-yellow-500"></i>
+              </button>
+              <div className='absolute top-[110%]  left-0 w-48 bg-[#1f1f1f] border border-yellow-500 rounded-sm shadow-md
+              opacity-0 scale-95 invisible group-hover-opacity-100 group-hover:scale-100 group-hover:visible transition-all duration-300 ease-out z-50'>
+                <ul className='divide-y divide-gray-700'>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Abu Dhabi</li>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Alain</li>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Dubai</li>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Sharjah</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Pick Date */}
+            <div className='relative w-full lg-w:auto px-4 py-3 flex items-center border-r border-gray-600 cursor-pointer'
+                onClick={openCalendar}
+            >  
+                <DatePicker
+                    selected={pickUpDate}
+                    onChange={(date) => setPickUpDate(date)}
+                    dateFormat="dd MMM yyyy"
+                    placeholderText='Pick Up Date'
+                    ref={datePickerRef}
+                    className={`bg-[1f1f1f] text-white outline-none cursor-pointer w-full ${!pickUpDate ? 'text-gray-400' : ''}`}
+                    calendarClassName='dark-datepicker'
+                    popperPlacement='bottom-start'
+                />
+                <i className="ri-calendar-line text-yellow-500 pointer-events-none"></i>      
+            </div>
+
+            {/* Drop Location */}
+              
+          </div>  
       </div>        
     </>
   )

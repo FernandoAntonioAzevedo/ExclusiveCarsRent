@@ -43,8 +43,8 @@ const Nav = () => {
               <div className='hidden lg:flex items-center gap-4'>
                   <i className="bi bi-telephone flex items-center justify-center border border-yellow-500 rounded-full text-2xl w-[45px] h-[45px]"></i>
                   <div>
-                    <p className='text-xs text-white opacity-70'>Precisa de ajuda?</p>
-                    <p className='font-semibold'>546 653 4322</p>
+                    <p className='text-xs text-white opacity-70'>Precisando de ajuda?</p>
+                    <p className='font-semibold'>(48) 3482-4322</p>
                   </div>
               </div>
             </div>
