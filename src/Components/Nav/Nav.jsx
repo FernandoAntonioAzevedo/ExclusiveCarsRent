@@ -15,7 +15,7 @@ const Nav = () => {
 
   return (
     <>
-       <nav className={`px-[12%] bg-red-500 text-white fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ${ isScrolled ? 'bg-[#111111] shadow-md' : 'bg-transparent'}`}>
+       <nav className={`px-[12%] text-white fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ${ isScrolled ? 'bg-[#111111] shadow-md' : 'bg-transparent'}`}>
             <div className='navbar max-w-7xl py-4 flex items-center justify-between relative'>
               <Link to='/' className='text-4xl font-bold logo font-bricolage'>
                 Exclusive <span>Cars</span>

@@ -145,7 +145,7 @@ function index() {
             {/* Cars type */}
             <div className='relative  w-full lg:w-auto px-4 py-3 group border-r border-gray-600'>
               <button className='flex items-center gap-2 w-full justify-between text-gray-400'>
-                Escolha o tipo de carro 
+                Escolher carro
                 <i className="ri-arrow-down-s-line text-yellow-500"></i>
               </button>
               <div className='absolute top-[110%]  left-0 w-48 bg-[#1f1f1f] border border-yellow-500 rounded-sm shadow-md
@@ -159,6 +159,24 @@ function index() {
               </div>
             </div>
 
+            {/* Pick Location - Retirada */}
+            <div className='relative  w-full lg:w-auto px-4 py-3 group border-r border-gray-600'>
+              <button className='flex items-center gap-2 w-full justify-between text-gray-400'>
+                Local de retirada
+                <i className="ri-arrow-down-s-line text-yellow-500"></i>
+              </button>
+              <div className='absolute top-[110%]  left-0 w-48 bg-[#1f1f1f] border border-yellow-500 rounded-sm shadow-md
+              opacity-0 scale-95 invisible group-hover-opacity-100 group-hover:scale-100 group-hover:visible transition-all duration-300 ease-out z-50'>
+                <ul className='divide-y divide-gray-700'>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Local de retirada</li>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Abu Dhabi</li>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Alain</li>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Dubai</li>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Sharjah</li>
+                </ul>
+              </div>
+            </div> 
+
             {/* Pick Date */}
             <div className='relative w-full lg-w:auto px-4 py-3 flex items-center border-r border-gray-600 cursor-pointer'
                 onClick={openCalendar}
@@ -167,7 +185,7 @@ function index() {
                     selected={pickUpDate}
                     onChange={(date) => setPickUpDate(date)}
                     dateFormat="dd MMM yyyy"
-                    placeholderText='Pick Up Date'
+                    placeholderText='Data retirada'
                     ref={datePickerRef}
                     className={`bg-[1f1f1f] text-white outline-none cursor-pointer w-full ${!pickUpDate ? 'text-gray-400' : ''}`}
                     calendarClassName='dark-datepicker'
@@ -176,9 +194,51 @@ function index() {
                 <i className="ri-calendar-line text-yellow-500 pointer-events-none"></i>      
             </div>
 
-            {/* Drop Location */}
-              
+            {/* Drop Location - entrega  */}
+            <div className='relative  w-full lg:w-auto px-4 py-3 group border-r border-gray-600'>
+              <button className='flex items-center gap-2 w-full justify-between text-gray-400'>
+                Local de entrega
+                <i className="ri-arrow-down-s-line text-yellow-500"></i>
+              </button>
+              <div className='absolute top-[110%]  left-0 w-48 bg-[#1f1f1f] border border-yellow-500 rounded-sm shadow-md
+              opacity-0 scale-95 invisible group-hover-opacity-100 group-hover:scale-100 group-hover:visible transition-all duration-300 ease-out z-50'>
+                <ul className='divide-y divide-gray-700'>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Local de entrega</li>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Abu Dhabi</li>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Alain</li>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Dubai</li>
+                  <li className='px-4 py-2 hover:bg-[#f5b750] transition cursor-pointer'>Sharjah</li>
+                </ul>
+              </div>
+            </div> 
+
+             {/* Return date */} 
+             <div className='relative w-full lg-w:auto px-4 py-3 flex items-center  cursor-pointer'
+              onClick={openreturenCalendar}
+          >  
+              <DatePicker
+                  selected={pickUpDate}
+                  onChange={(date) => setPickUpDate(date)}
+                  dateFormat="dd MMM yyyy"
+                  placeholderText='Data retirada'
+                  ref={returnPickerRef}
+                  className={`bg-[1f1f1f] text-white outline-none cursor-pointer w-full ${!returnDate ? 'text-gray-400' : ''}`}
+                  calendarClassName='dark-datepicker'
+                  popperPlacement='bottom-start'
+              />
+              <i className="ri-calendar-line text-yellow-500 pointer-events-none"></i>      
+             </div>           
           </div>  
+      </div>
+
+      {/* About */}
+      <div className='about text-white lg:px-[10%] px-[8%] py-[150px]'>
+          <div className='max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center'>
+              <p className='uppercase text-sm tracking-widest text-[#f5b754] mb-2'>
+                  Exclusive <span>Cars</span>
+              </p>
+              <h2 className='text-4xl'></h2>
+          </div>    
       </div>        
     </>
   )
