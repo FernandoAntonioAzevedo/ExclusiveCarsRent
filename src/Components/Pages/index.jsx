@@ -289,12 +289,12 @@ function index() {
       {/* Banner */}
       <div className='banner lg:px-[12%] px-[8%] py-[150px]'>
           <div className='banner-content text-center'>              
-              <p className='uppercase text-sm tracking-widest text-[#f5b754] mb-2'>Rent Now</p>
+              <p className='uppercase text-sm tracking-widest text-[#f5b754] mb-2'>Locar Agora</p>
               <h2 className='text-4xl md:text-5xl font-bold mb-3 font-bricolage'>
-                Book Auto Rental                
+                Agende sua retirada            
               </h2>
               
-              {/* Book option */}
+              {/* Book option banner */}
               <div className='book-option bg-[#1f1f1f] text-white w-[90%] max-w-[1200px]
                 mx-auto mt-[-50px] rounded-3xl px-6 py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 shadow-lg 
                 z-50 absolute bottom-[0%] left-[50%] transform -translate-x-1/2 -translate-y-1/2'>
@@ -389,6 +389,18 @@ function index() {
                 </div>           
               </div>                          
           </div>    
+      </div>
+
+      {/* Luxury Cars */}
+      <div className='luxury-cars text-white py-[150px]'>
+          <div className="text-center">
+              <p className='uppercase text-sm tracking-widest text-[#f5b754] mb-2'>Select Your Car</p>
+              <h2 className='text-4xl md:text-5xl font-bold mb-3 font-bricolage'>
+                Luxury <span className='text-[#f5b754] font-bricolage'> Car Fleet</span>          
+              </h2>  
+           </div>
+
+
       </div>        
     </>
   )
